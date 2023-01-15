@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 mongoose.set('strictQuery', false);
-const DatabaseConn = async () => {
+const DatabaseConnLocal = async () => {
     try {
         const connDb = await mongoose.connect(`mongodb://localhost:27017/${process.env.databaseName}`, { useNewUrlParser: true }, { useUnifiedTopology: true }, { useCreateIndex: true })
         console.log("..........Database successfully connected!..........")
@@ -9,4 +9,4 @@ const DatabaseConn = async () => {
         console.log("Failed to connect to database")
     }
 }
-export default DatabaseConn
+export default DatabaseConnLocal

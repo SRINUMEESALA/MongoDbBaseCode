@@ -1,7 +1,7 @@
 GET http://localhost:4000/users
 
 ###
-GET http://localhost:4000/user/63c251f918d80f3bcd776575
+GET http://localhost:4000/user/63c3b083679194b073d980a1
 
 
 ###
@@ -9,7 +9,7 @@ POST http://localhost:4000/register
 Content-Type:application/json
 
 {
-  "name": "Hare",
+  "name": "Krishna",
   "email": "alksjfdl@golok.om",
   "password": "hhh4hhhhh",
   "mobile":"98235793485",
@@ -18,16 +18,16 @@ Content-Type:application/json
 }
 
 ###
-PUT http://localhost:4000/update-details/63c251f918d80f3bcd776575
+PUT http://localhost:4000/update-details/63c3b083679194b073d980a1
 Content-Type:application/json
 
 {
-  "mobile": "1111111111"
+  "name": "RadheKrishna"
 }
 
 ###
 
-DELETE http://localhost:4000/remove-user/63c251f918d80f3bcd776575
+DELETE http://localhost:4000/remove-user/63c3b083679194b073d980a1
 
 ###
 

@@ -11,7 +11,6 @@ usersRoute.get("/users", async (request, response) => {
         response.send({ msg: "Getting Users data failed" })
         response.send(400)
     }
-
 })
 
 usersRoute.get("/user/:id", async (request, response) => {
@@ -24,7 +23,6 @@ usersRoute.get("/user/:id", async (request, response) => {
         response.send({ msg: "Getting User data failed" })
     }
 })
-
 
 usersRoute.post("/register", async (request, response) => {
     const data = request.body
