@@ -1,12 +1,13 @@
+import dotenv from "dotenv"
 import express from "express"
 import DatabaseConn from "./src/Database/dbConnection.js"
 import User from "./src/Models/users.js"
 import usersRoute from "./src/Routes/userRoute.js"
 import trailRoute from "./src/Routes/trailRoute.js"
 
+dotenv.config()
+const port = process.env.PORT || process.env.serverRunningPortNumber
 
-
-const port = process.env.PORT || 4000
 const app = express()
 app.use(express.json())
 app.listen(port, () => console.log(`..........Server running successfully at ${port}..........`))
@@ -16,7 +17,6 @@ app.use(express.static("../backend/public"))
 
 app.use(usersRoute)
 app.use(trailRoute)
-
 
 
 
