@@ -1,7 +1,7 @@
 GET http://localhost:4000/users
 
 ###
-GET http://localhost:4000/user/63c3b083679194b073d980a1
+GET http://localhost:4000/user/63c3b236679194b073d980a8
 
 
 ###
@@ -9,10 +9,10 @@ POST http://localhost:4000/register
 Content-Type:application/json
 
 {
-  "name": "Krishna",
-  "email": "alksjfdl@golok.om",
+  "name": "Govind",
+  "email": "govind@golok.om",
   "password": "hhh4hhhhh",
-  "mobile":"98235793485",
+  "mobile":"1234567890",
   "location": "Delhi",
   "gender":"female"
 }
